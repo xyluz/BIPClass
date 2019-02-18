@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Practice</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    
+    <style>
+        .cover-sb{
+            /* add more style */
+            margin: 30px;
+
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container cover-sb">
+       <p class="text-info"><strong> Inventory System JS Practice </strong> </p>
+        <script>
+
+            // reserverd word --> function 
+            // name --> any name
+            // () -> add brackets in front of the name 
+            // {} -> open and close your block of code 
+            // Functions Naming protocol
+            //--> your function should start with an alphabet
+            //--> should have a descriptive name
+            //--> should not have special characters
+            //--> should not have space in between
+            //--> you can have underscore
+            //--> you can't have hyphen 
+
+            // Variables
+
+
+            function doSomething(){
+            //get value of box1 - solved
+            //get value of box2 - solved
+            //add value of box1 to box2 - solved
+            //display the result - solved
+
+            var x;
+            var y;
+
+            x = parseInt(kunle.box1.value);
+            y =  parseInt(kunle.box2.value);
+
+           
+            // alert(x);
+            // alert(y);
+             // alert(x+y);
+            //produce the two names adding another text in between.
+
+            alert(x+y);
+
+            }
+
+            function doInventory(){
+                //collect currently availabe units -- solved
+                //collect units to be purchased -- solved
+                //deduct units from available -- solved
+                //produce new available
+                var available = parseInt(ene.box1.value);
+                var units = parseInt(ene.box2.value);
+
+                var currentValue = available;
+
+                if(units === ''){
+                    //check is okay
+                    units = 0;
+                }
+
+                var newAvailblaUnits = available - units;
+
+
+
+                ene.box1.value = parseInt(newAvailblaUnits);
+
+                //get the unit price -- solved
+                //get the unit to be purchase -- solved
+                //multply unit price by unit to be purchase -- solved
+                //produce the total price -- solved
+
+                var unitPrice = parseInt(ene.box3.value);
+                var totalPrice = unitPrice * units;
+
+                ene.box4.value = totalPrice;
+
+                //get the unit of purchase -- solved
+                //compare with units available -- solved
+                //check if unit available is bigger than units enter -- solved
+                //produce alert if unit availanle is less than unit entered -- solved
+
+                // available < units (false) -- produce alert
+                // available > units (true) -- do not produce alert
+
+                var comp = available > units;
+
+                // comp can either be true or false;
+
+                if(comp == true){
+                  // alert("No worries");
+                }else{
+                    // alert("Worry!")  
+                }
+
+            }
+
+
+
+        </script>
+        <p>
+            <div style="display:none" class="alert alert-danger text-info col-8">
+                       Error Message here
+            </div>
+        </p>
+        <p>
+            <form name="ene">
+             
+               <strong>Available Quantity:</strong><br>
+               
+                <input readonly name="box1" value="20" size="1" type="text" placeholder="0" ><br>
+
+           <strong>Unit purchase:</strong><br>
+                <input onkeyup="doInventory()"  name="box2" type="text" size="1" placeholder="0"><br><br>
+
+            <strong>Unit Price:</strong><br>
+                <input readonly name="box3" type="text" size="1" value="1500"><br>
+<br>
+
+            <strong>Total Price Purchase:</strong><br>
+                <input readonly name="box4" type="text" size="1" placeholder="0"><br>
+<br>
+
+
+                <button name="submitbutton" type="button"  class="btn btn-primary btn-sm">Complete Order</button>
+
+
+            </form>
+           <!--  <style>
+                .thejokebox:hover{
+                    background-color: red;
+                    color: white;
+                }
+            </style> -->
+
+            <!-- <div class="text-info thejokebox" onmouseout="noJoke()" onmouseover="doJoke()">Mouse Over to see something</div>
+            <script>
+                function doJoke(){
+                    f.thejoke.value = "I am joking!";
+                }
+
+                function noJoke(){
+                    f.thejoke.value='0';
+                }
+            </script>
+            <div> 
+                <form name="f">
+                    <input type="text" value="0" name="thejoke" />
+                </form>
+            </div> -->
+        </p>
+    </div>
+</body>
+</html>

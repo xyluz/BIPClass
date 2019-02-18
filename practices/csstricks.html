@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Tricks | Basics</title>
+</head>
+<body>
+    <style>
+
+        /* Base CSS */
+     
+        .align-center {
+            text-align: center;
+        }
+
+        .align-left{
+            text-align: left;
+        }
+
+        .bold-text{
+            font-weight: 400;
+        }
+
+        .round-corner{
+            border-radius: 4px;
+
+        }
+
+        .border-line{
+            border: solid 1px black;
+        }
+
+        button{
+            background: green;
+            color: black;
+
+        }
+
+        button:hover{
+            background: red;
+            color: white;
+        }
+
+        .over-me a:hover{
+            background-color: grey;
+        }
+
+        .logo span{
+            /* Go inside class logo and apply the following to any span you find */
+
+            color:blueviolet;
+            font-size: 80px;
+        }
+
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        div:first-child{
+            color: red;
+        }
+
+    
+    </style>
+    
+    <div class="logo">
+        <span>BIP Class</span><br />
+        <small>Programming for career change</small><br />
+        <span>SEK</span>
+        <span>We move!</span>
+    </div>
+
+    <div>
+        <h1 class="align-center">
+            Some text
+        </h1>
+        <h2 class="align-left" title="this is a sample">
+            Some more text
+        </h2>
+    </div>
+
+    <div> <!-- parent-->
+        <div> <!-- first child-->
+            rest
+        </div>
+        <p title="This is another example" class="border-line round-corner bold-text over-me"> <!-- second child-->
+           <a href="#"> This is a lot of text, blah blah blah </a> <br>
+            This is a lot of text, blah blah blah <br>
+            This is a lot of text, blah blah blah <br>
+            <a href="#">This is a lot of text, blah blah blah</a> <br>
+            This is a lot of text, blah blah blah <br>
+            This is a lot of text, blah blah blah <br>
+        </p>
+    </div>
+
+    <div class="bold-text">
+        testing boldness... are you bold enough?
+    </div>
+
+    <div>
+        <button type="button"> Click me </button> <br />
+        <button type="button"> Click me twice </button>
+
+    </div>
+
+</body>
+</html>

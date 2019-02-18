@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Practice</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    
+    <style>
+    	
+    	.basic{
+    		padding-top: 40px;
+    	}
+
+    	.basic button{
+    		margin-top: 20px;
+    	}
+
+    	.danger-alert{
+    		display: none;
+    	}
+
+
+    </style>
+
+   <script>
+       
+       function operation(b,y,n){
+
+            
+           if(n == 'add'){
+            alert(b + y);
+           }
+
+           if(n == 'minus'){
+            alert(b - y)
+           }
+
+           if(n == 'multiply'){
+            alert(b * y);
+           }
+
+
+       }
+
+   </script>
+
+</head>
+<body>
+	<div class="container basic">
+
+		<button onclick="operation(4,8,'add')" class="btn btn-sm btn-primary">Do addition <i class="fa fa-plus"></i></button>
+
+        <br />
+
+        <button onclick="operation(4,7,'minus')" class="btn btn-sm btn-primary">Do subtraction <i class="fa fa-dash"></i></button>
+
+        <br />
+
+         <button onclick="operation(9,2,'multiply')" class="btn btn-sm btn-primary">Do multiplication <i class="fa fa-times"></i></button>
+
+	
+	</div>
+</body>
+</html>
